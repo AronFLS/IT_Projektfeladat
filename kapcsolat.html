@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kapcsolat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/stilus.css" />
+  </head>
+  <body class="kapcsolat">
+    <header>
+      <h1>Title</h1>
+      <nav>
+        <ul>
+          <li class="nav">
+            <a href="index.html" aria-label="Kezdőlap">
+              <span class="nav_desktop">Home</span>
+              <span class="nav_mobile">
+                <i class="fa-solid fa-house" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+          <li class="nav">
+            <a href="gyakorlatok.html"
+              ><span class="nav_desktop">Gyakorlatok</span
+              ><span class="nav_mobile"
+                ><i class="fa-solid fa-dumbbell" aria-hidden="true"></i></span
+            ></a>
+          </li>
+          <li class="nav">
+            <a href="edzestervek.html"
+              ><span class="nav_desktop">Edzéstervek</span
+              ><span class="nav_mobile"
+                ><i class="fa-solid fa-list-check" aria-hidden="true"></i></span
+            ></a>
+          </li>
+          <li class="nav">
+            <a href="kalkulator.html"
+              ><span class="nav_desktop">Kalkulátor</span
+              ><span class="nav_mobile"
+                ><i class="fa-solid fa-calculator" aria-hidden="true"></i></span
+            ></a>
+          </li>
+          <li class="active_li">
+            <a href="kapcsolat.html"
+              ><span class="nav_desktop">Kapcsolat</span
+              ><span class="nav_mobile"
+                ><i class="fa-solid fa-envelope" aria-hidden="true"></i></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="kapcsolat-kartya">
+        <div class="kapcsolat-bevezeto">
+          <h2>Kapcsolat</h2>
+          <p>
+            Kérdésed van az edzéstervekkel vagy a gyakorlatokkal kapcsolatban?
+            Írj nekünk, és hamarosan válaszolunk.
+          </p>
+          <div class="kapcsolat-adatok">
+            <p>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:info@fitneszterem.hu">info@fitneszterem.hu</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+3612345678">+36 1 234 5678</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              1117 Budapest, Edző utca 10.
+            </p>
+          </div>
+        </div>
+
+        <form class="kapcsolat-form" action="#" method="post">
+          <div class="kapcsolat-form-row">
+            <div class="form-group">
+              <label for="nev">Név</label>
+              <input type="text" id="nev" name="nev" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail-cím</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="uzenet">Üzenet</label>
+            <textarea id="uzenet" name="uzenet" rows="6" required></textarea>
+          </div>
+          <button type="submit">Üzenet küldése</button>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
