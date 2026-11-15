@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/stilus.css" />
   </head>
   <body>
@@ -17,11 +21,42 @@
       <h1>Title</h1>
       <nav>
         <ul>
-          <li class="active_li">Home</li>
-          <li><a href="gyakrolatok.html">Gyakorlatok</a></li>
-          <li><a href="edzestervek.html">Edzéstervek</a></li>
-          <li><a href="kalkulator.html">Kalkulátor</a></li>
-          <li><a href="kapcsolat.html">Kapcsolat</a></li>
+          <li class="active_li">
+            <a href="index.html" aria-label="Kezdőlap">
+              <span class="nav_desktop">Home</span>
+              <span class="nav_mobile">
+                <i class="fa-solid fa-house" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+          <li class="nav">
+            <a href="gyakorlatok.html"
+              ><span class="nav_desktop">Gyakorlatok</span
+              ><span class="nav_mobile"
+                ><i class="fa-solid fa-dumbbell" aria-hidden="true"></i></span
+            ></a>
+          </li>
+          <li class="nav">
+            <a href="edzestervek.html"
+              ><span class="nav_desktop">Edzéstervek</span
+              ><span class="nav_mobile"
+                ><i class="fa-solid fa-list-check" aria-hidden="true"></i></span
+            ></a>
+          </li>
+          <li class="nav">
+            <a href="kalkulator.html"
+              ><span class="nav_desktop">Kalkulátor</span
+              ><span class="nav_mobile"
+                ><i class="fa-solid fa-calculator" aria-hidden="true"></i></span
+            ></a>
+          </li>
+          <li class="nav">
+            <a href="kapcsolat.html"
+              ><span class="nav_desktop">Kapcsolat</span
+              ><span class="nav_mobile"
+                ><i class="fa-solid fa-envelope" aria-hidden="true"></i></span
+            ></a>
+          </li>
         </ul>
       </nav>
     </header>

@@ -24,16 +24,21 @@ body {
   color: var(--clr-textcolor-main);
 }
 /* -- Nav -- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+i {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
 nav ul {
+  display: flex;
   list-style: none;
   padding: 0;
-}
-nav ul {
-  padding: 0;
   margin: 0;
-}
-nav li {
-  padding-top: 1rem;
 }
 nav a {
   display: block;
@@ -41,16 +46,18 @@ nav a {
   color: var(--clr-textcolor-secondary);
 }
 
-nav .active_li {
+nav .active_li a {
   color: var(--clr-textcolor-main);
 }
 
+.nav_desktop {
+  display: none;
+}
 /* -- Cím -- */
 h1 {
   display: block;
   text-align: center;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem 0.5rem;
   padding: 0;
   color: var(--2);
 }
@@ -131,16 +138,12 @@ body.kalkulator {
   padding-right: 1rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-  }
-
-  h1 {
-    margin: 1rem 0.5rem;
   }
 
   nav ul {
@@ -151,6 +154,12 @@ body.kalkulator {
 
   nav li {
     padding-top: 0;
+  }
+  .nav_desktop {
+    display: inline;
+  }
+  .nav_mobile {
+    display: none;
   }
 
   .kalkulator h2 {
