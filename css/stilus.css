@@ -12,7 +12,7 @@
   */
   --clr-textcolor-main: #070502;
   --clr-textcolor-secondary: #cdc9bf;
-  --clr-background-main: #ffff;
+  --clr-background-main: #ececec;
   --clr-background-secondary: #cdc9bf;
 }
 
@@ -29,6 +29,16 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  background-color: var(--clr-background-secondary);
+  padding: 0 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 1.25rem;
+}
+h1 {
+  display: block;
+  text-align: center;
+  padding: 0;
+  color: var(--2);
 }
 i {
   font-size: 1.5rem;
@@ -43,7 +53,7 @@ nav ul {
 nav a {
   display: block;
   text-decoration: none;
-  color: var(--clr-textcolor-secondary);
+  color: grey;
 }
 
 nav .active_li a {
@@ -52,14 +62,6 @@ nav .active_li a {
 
 .nav_desktop {
   display: none;
-}
-/* -- Cím -- */
-h1 {
-  display: block;
-  text-align: center;
-  margin: 1rem 0.5rem;
-  padding: 0;
-  color: var(--2);
 }
 
 /* ----- Oldalak ----- */
@@ -74,7 +76,7 @@ body.kalkulator {
 .kalkulator article {
   display: block;
   width: calc(100% - 1rem);
-  margin: 1rem auto;
+  margin: 0 auto;
   background-image: linear-gradient(
     to bottom,
     var(--clr-background-secondary),
@@ -87,6 +89,7 @@ body.kalkulator {
 .kalkulator h2 {
   font-size: 1.2rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .kalkulator-form {
@@ -187,6 +190,7 @@ body.kalkulator {
     font-size: 1.5rem;
     padding: 1rem;
     margin: 0;
+    margin-top: 2rem;
   }
   .kalkulator article {
     max-width: 50rem;

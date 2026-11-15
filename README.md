@@ -19,3 +19,7 @@ index.html, css/stilus.css, js/app.js, images/
 
 - WorkoutX
 - https://workoutxapp.com/exercises.html
+
+# Ai
+
+- asked how can 1repmax be calculated
