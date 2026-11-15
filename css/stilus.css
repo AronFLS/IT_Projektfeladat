@@ -101,12 +101,12 @@ body.kalkulator {
   display: grid;
   grid-template-columns: 7rem 7rem;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   text-align: left;
 }
 
 .kalkulator-form label {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .kalkulator-form input {
@@ -114,6 +114,7 @@ body.kalkulator {
   border: 1px solid var(--color-border);
   border-radius: 4px;
 }
+
 .kalkulator button {
   font-size: 1rem;
   font-weight: bold;
@@ -121,23 +122,43 @@ body.kalkulator {
   color: var(--color-cta);
   width: calc(100% - 1rem);
   max-width: 20rem;
-  margin: 0.5rem;
+  margin: 0rem;
   padding: 0.5rem;
   border-radius: 12px;
   border: 3px solid var(--clr-background-secondary);
 }
 
 .kalkulator table {
-  margin: 1rem auto;
+  width: calc(100% - 2rem);
+  max-width: 32rem;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-color: white;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
 }
 .kalkulator th,
 .kalkulator td {
-  font-size: 1rem;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #bebebe;
 }
-
+.kalkulator th {
+  background-color: grey;
+  color: white;
+  font-weight: 700;
+}
+.kalkulator tbody tr:nth-child(even) {
+  background-color: #ececec;
+}
+.kalkulator tbody tr:last-child td {
+  border-bottom: none;
+}
+.kalkulator .sulyEredmeny {
+  font-weight: 700;
+  color: var(--clr-textcolor-main);
+}
 @media (min-width: 768px) {
   header {
     display: flex;
